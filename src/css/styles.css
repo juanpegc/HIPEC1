@@ -1,0 +1,186 @@
+header {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  background: #353535;
+}
+
+#links a{
+  background-color: #f1d9ad;
+  border: 1px white solid;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  margin-inline: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+#links a:hover {
+  background-color: #ddd;
+}
+
+#background {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/image.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#title {
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+header a:hover {
+  color: aqua;
+}
+
+.box-icons {
+  color: white;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  margin-inline: 30px;
+  padding-bottom: 50px;
+}
+
+.texto {
+  margin-inline: 10%;
+  font-size: 1.5rem;
+}
+
+#localizacion {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iframe {
+  display: flex;
+  justify-content: center;
+}
+
+#indice a{
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#indice a:hover {
+  color: aqua;
+}
+
+#bibliografia {
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#bibliografia a {
+  color: white;
+  text-decoration: none;
+}
+
+#bibliografia a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+footer {
+  position: fixed;
+  font-size: 1rem;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+#hora {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+}
+
+#hora #hora_input {
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+
+@media (max-width: 500px) {
+
+  #links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #links a {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  #content {
+    margin-block: 40px;
+    font-size: 15px;
+  }
+
+  #localizacion {
+    font-size: 15px;
+    flex-direction: column;
+  }
+
+  .texto {
+    font-size: 15px;
+    margin-block: 50px;
+  }
+
+  iframe { 
+    width: 200px;
+    height: 150px;
+  }
+  
+}
+
+.splide {
+  display: flex;
+  text-align: center;
+}
+
+.splide__slide img {
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
